@@ -13,3 +13,8 @@
 /public/*
 public/*
 /node_modules/
+
+/dist/*
+/public/*
+public/*
+node_modules

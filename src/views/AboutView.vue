@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="less">
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .about {
     display: flex;
     align-items: center;
