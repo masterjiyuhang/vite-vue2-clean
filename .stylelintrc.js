@@ -34,6 +34,7 @@ module.exports = {
         ignorePseudoClasses: ['global', 'deep'],
       },
     ],
+    'media-feature-range-notation': 'prefix',
     'selector-pseudo-element-no-unknown': [
       true,
       {

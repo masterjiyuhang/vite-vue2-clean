@@ -1,5 +1,6 @@
 import { post } from '@/utils/request';
 
+const prefix = 'erhang';
 export default class User {
   /**
    * 登录
@@ -8,7 +9,7 @@ export default class User {
    * @returns
    */
   static async login(username, password) {
-    return post('/login', {
+    return post(`/${prefix}/login`, {
       username,
       password,
     });

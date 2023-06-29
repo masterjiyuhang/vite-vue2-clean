@@ -1,6 +1,9 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <el-button v-track-report:data="{ eventCode: 'eventCode', extensions: 'extensions', optionsType: 'optionsType' }">
+      test report directive</el-button
+    >
   </div>
 </template>
 
@@ -28,7 +31,7 @@ export default {
 </script>
 
 <style lang="less">
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   .about {
     display: flex;
     align-items: center;
