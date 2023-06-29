@@ -63,6 +63,11 @@ export default ({ mode }) => {
       // https: false,
       // 自定义代理规则
       proxy: {
+        '/api/jctrans': {
+          target: 'https://api-dev2.jctrans.com', // easymock
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api\/jctrans/, ''),
+        },
         '/api': {
           target: viteEnv.VITE_PROXY_DOMAIN_REAL, // easymock
           changeOrigin: true,
