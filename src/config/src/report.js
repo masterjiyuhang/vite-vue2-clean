@@ -49,6 +49,5 @@ const getReportData = (store, from, appId, extensions = {}) => {
 export const execTrackReport = async (store, to, from) => {
   const headers = getReportHeaders(store, to, from);
   const reportData = getReportData(store, from);
-  await reportApi(headers, reportData);
-  console.log(headers, reportData, '埋点上报');
+  await reportApi(reportData, headers);
 };
