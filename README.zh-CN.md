@@ -29,7 +29,7 @@
 </p>
 
 <p align='center'>
-  <a href="https://elanyoung.github.io/vite-vue2-js-starter-template">在线 Demo</a>
+  <a href="https://masterjiyuhang.github.io/vite-vue2-clean">在线 Demo</a>
 </p>
 
 <p align="center">
