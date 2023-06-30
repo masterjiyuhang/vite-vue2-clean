@@ -4,6 +4,7 @@ import vue2 from '@vitejs/plugin-vue2';
 import UnoCSS from 'unocss/vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import viteCompression from 'vite-plugin-compression';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { wrapperEnv } from './src/utils/env';
 
 export default ({ mode }) => {
@@ -15,8 +16,26 @@ export default ({ mode }) => {
     base: VITE_BASE_URL,
     plugins: [
       vue2(),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'static/js/config.js',
+            dest: 'static/js',
+          },
+        ],
+      }),
       createHtmlPlugin({
         inject: {
+          tags: [
+            {
+              tag: 'script',
+              attrs: {
+                type: 'text/javascript',
+                src: `/static/js/config.js?version=${new Date().getTime()}`,
+              },
+              injectTo: 'body-prepend',
+            },
+          ],
           data: {
             title: viteEnv.VITE_GLOBAL_APP_TITLE,
           },

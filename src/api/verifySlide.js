@@ -1,6 +1,6 @@
 import request from '@/utils/request';
 
-const prefix = 'jctrans';
+const prefix = import.meta.env.MODE === 'development' ? 'jctrans' : '';
 // 获取验证图片  以及token
 export function reqGet(data) {
   return request({
