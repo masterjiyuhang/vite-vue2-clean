@@ -5,6 +5,7 @@ import App from './App.vue';
 import store from './store';
 import router from './router';
 import directives from '@/directives';
+import permission from '@/config/permission';
 
 import 'jctranss-ui/lib/theme-chalk/index.css';
 
@@ -13,6 +14,7 @@ import 'uno.css';
 import '@/style/index.less';
 import '@/assets/main.css';
 
+Vue.use(permission, { router, store });
 Vue.use(JctransUI);
 Vue.use(directives);
 
