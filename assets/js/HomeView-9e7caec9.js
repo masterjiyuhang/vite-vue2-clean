@@ -1,1 +1,0 @@
-import{n as r}from"./index-38d8d1cb.js";const s={__name:"HomeView",setup(n){return{__sfc:!0}}};var t=function(){var e=this,_=e._self._c;return e._self._setupProxy,_("main")},o=[],a=r(s,t,o,!1,null,null,null,null);const c=a.exports;export{c as default};
