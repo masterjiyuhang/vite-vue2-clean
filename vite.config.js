@@ -30,7 +30,7 @@ export default ({ mode }) => {
             {
               tag: 'script',
               attrs: {
-                type: 'text/javascript',
+                type: 'mode',
                 src: `/static/js/config.js?version=${new Date().getTime()}`,
               },
               injectTo: 'body-prepend',
