@@ -1,4 +1,4 @@
-import { Message } from 'jctranss-ui';
+import { Message } from 'element-ui';
 
 const copy = {
   bind(el, binding) {
