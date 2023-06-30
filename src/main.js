@@ -1,12 +1,12 @@
 import Vue from 'vue';
 
-import JctransUI from 'jctrans-ui';
+import JctransUI from 'jctranss-ui';
 import App from './App.vue';
 import store from './store';
 import router from './router';
 import directives from '@/directives';
 
-import 'jctrans-ui/lib/theme-chalk/index.css';
+import 'jctranss-ui/lib/theme-chalk/index.css';
 
 import 'uno.css';
 
