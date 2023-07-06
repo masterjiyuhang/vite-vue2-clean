@@ -10,6 +10,10 @@ import HelloWorld from './components/HelloWorld.vue';
       <div class="wrapper">
         <HelloWorld msg="You did it!" class="c-yellow" />
 
+        <h2 class="test-font">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
+        <h2 class="test-font1">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
+        <h2 class="text-[32px]">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
+
         <nav>
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
@@ -23,6 +27,20 @@ import HelloWorld from './components/HelloWorld.vue';
 </template>
 
 <style scoped>
+.test-font {
+  /* font-family: AlimamaFangYuanTiVF-Thin; */
+
+  font-family: ALIMAMA;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.test-font1 {
+  font-family: AlimamaFangYuanTiVF-Thin;
+  font-size: 32px;
+  font-weight: 400;
+}
+
 header {
   max-height: 100vh;
   line-height: 1.5;
