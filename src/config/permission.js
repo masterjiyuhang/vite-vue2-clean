@@ -12,8 +12,12 @@ const install = (Vue, { router, store }) => {
     // // 初始化权限信息
     // initPermissions(to, from, next, store);
 
-    // 进行埋点上报
-    await execTrackReport(store, to, from);
+    try {
+      // 进行埋点上报
+      await execTrackReport(store, to, from);
+    } catch (error) {
+      console.log(error);
+    }
 
     nProgress.start();
     next();

@@ -12,14 +12,13 @@ import 'jctrans-ui/lib/theme-chalk/index.css';
 import 'uno.css';
 
 import '@/style/index.less';
-import '@/assets/main.css';
 
 Vue.use(permission, { router, store });
 Vue.use(JctransUI);
 Vue.use(directives);
 
 new Vue({
-  router,
   store,
+  router,
   render: (h) => h(App),
 }).$mount('#app');

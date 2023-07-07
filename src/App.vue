@@ -1,104 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
-</script>
+<script setup></script>
 
 <template>
   <div id="app">
-    <header>
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" class="c-yellow" />
-
-        <h2 class="test-font">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
-        <h2 class="test-font1">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
-        <h2 class="text-[32px]">哈哈哈 AAAAAaasdqweqweasdklqje 213124124 1234567890</h2>
-
-        <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-          <router-link to="/test">Test</router-link>
-        </nav>
-      </div>
-    </header>
-
     <router-view />
   </div>
 </template>
 
 <style scoped>
-.test-font {
-  /* font-family: AlimamaFangYuanTiVF-Thin; */
-
-  font-family: ALIMAMA;
-  font-size: 32px;
-  font-weight: 400;
-}
-
-.test-font1 {
-  font-family: AlimamaFangYuanTiVF-Thin;
-  font-size: 32px;
-  font-weight: 400;
-}
-
-header {
-  max-height: 100vh;
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+html,
+body,
+#app {
   width: 100%;
-  margin-top: 2rem;
-  font-size: 12px;
-  text-align: center;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    place-items: flex-start;
-  }
-
-  nav {
-    margin-top: 1rem;
-    margin-left: -1rem;
-    padding: 1rem 0;
-    font-size: 1rem;
-    text-align: left;
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 </style>
