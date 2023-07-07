@@ -66,7 +66,7 @@ export default ({ mode }) => {
       // 监听所有地址
       host: '0.0.0.0',
       // 服务启动时是否自动打开浏览器
-      open: VITE_OPEN,
+      open: Boolean(VITE_OPEN),
       // 允许跨域
       cors: true,
       // https: false,
