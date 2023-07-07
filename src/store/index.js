@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import getters from './getters';
 
 const files = import.meta.glob('./modules/*.js', {
   eager: true,
@@ -17,6 +18,7 @@ const store = new Vuex.Store({
   // 严格模式
   strict: import.meta.env.MODE !== 'production',
   modules,
+  getters,
 });
 
 export default store;
