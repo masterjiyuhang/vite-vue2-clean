@@ -1,1 +1,0 @@
-import{n as t,s}from"./index-51d041c9.js";const o={__name:"HomeView",setup(_){return s,{__sfc:!0,lang:s.getters.language}}};var a=function(){var e=this,n=e._self._c,r=e._self._setupProxy;return n("main",[e._v(" "+e._s(r.lang)+" "),n("h1",[e._v("hhh")])])},l=[],c=t(o,a,l,!1,null,null,null,null);const m=c.exports;export{m as default};
