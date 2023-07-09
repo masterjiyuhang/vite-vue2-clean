@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import JctransUI from 'element-ui';
+import ElementUI from 'element-ui';
 import App from './App.vue';
 import store from './store';
 import router from './router';
@@ -14,11 +14,15 @@ import 'uno.css';
 import '@/style/index.less';
 import '@/assets/main.css';
 
+import i18n from '@/locales/setupI18n';
+
 Vue.use(permission, { router, store });
-Vue.use(JctransUI);
+Vue.use(ElementUI);
 Vue.use(directives);
+Vue.use(i18n);
 
 new Vue({
+  i18n,
   router,
   store,
   render: (h) => h(App),

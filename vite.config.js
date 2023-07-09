@@ -5,6 +5,7 @@ import UnoCSS from 'unocss/vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import viteCompression from 'vite-plugin-compression';
 // import { viteStaticCopy } from 'vite-plugin-static-copy';
+import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 import { wrapperEnv } from './src/utils/env';
 
 export default ({ mode }) => {
@@ -24,6 +25,7 @@ export default ({ mode }) => {
       //     },
       //   ],
       // }),
+      VueI18n({ bridge: true, runtimeOnly: false }),
       createHtmlPlugin({
         inject: {
           data: {
