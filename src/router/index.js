@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import demoRouters from './modules/demo';
+import { basicRouter } from './basic';
 
 Vue.use(VueRouter);
 
-const routes = [...demoRouters];
+const routes = [...basicRouter];
 
 const router = new VueRouter({
   mode: import.meta.env.MODE !== 'production' ? 'history' : 'hash',
