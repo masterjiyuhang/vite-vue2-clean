@@ -71,7 +71,6 @@
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/ElanYoung/vite-vue2-js-starter-template/generate).
 
 ### Clone to local
 
