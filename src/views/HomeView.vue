@@ -6,6 +6,7 @@
     <div class="home__content_two">
       <el-button type="primary" @click="changeLang">测试切换语言</el-button>
     </div>
+    <span v-copy="'测试点击复制'" class="cursor-pointer">测试点击复制</span>
   </main>
 </template>
 
